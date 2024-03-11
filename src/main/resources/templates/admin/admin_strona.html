@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Strona modyfikacji administratora</title>
+    <meta name="theme-color" content="green;">
+    <link rel="icon" href="../img/caar.jpg"
+          type="image/x-icon"/>
+    <style>
+.container {
+text-align: left;
+}
+h1 {
+color: darkred;
+}
+</style>
+    <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/4.0.0-2/css/bootstrap.min.css} "/>
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+        <a class="navbar-brand" href="/">Salon samochodowy Autex</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+
+
+
+
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/main_admin}">Strona główna</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Modyfikacje
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:inline="text" style="color:lightskyblue;">Jesteś zalogowany jako <b
+                            style="text-transform:capitalize">[[${#httpServletRequest.remoteUser}]]</b></a>
+                </li>
+                <form method="post" th:action="@{/index}">
+                    <button class="btn btn-primary" type="submit" onclick="successfullyLogout()" value="Sign Out">Logout
+                    </button>
+                </form>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div align="center">
+
+    <!-- Page Header -->
+    <h1>Oferta sprzedaży</h1>
+
+    <a href="/new_form">Dodaj nowy pojazd</a>
+    <br/><br/>
+    <!-- Table -->
+    <table border = "1" cellpadding = "10"> <!-– border –
+        obramowanie, cellpadding – rozmiar komórki -->
+        <!-- Table header -->
+        <thead>
+        <tr> <!-- Table row -->
+            <th>Id pojazdu</th>
+            <th>Numer vin</th>
+            <th>Marka</th>
+            <th>Model</th>
+            <th>Rok produkcji</th>
+            <th>Numer rejestracyjny</th>
+            <th>Przebieg</th>
+            <th>Rodzaj paliwa</th>
+            <th>Kolor</th>
+            <th>Moc silnika</th>
+            <th>Pojemność bagażnika</th>
+            <th>Cena</th>
+            <th>Id salonu</th>
+            <th>Dostępne akcje</th>
+        </tr>
+        </thead>
+        <!-- Table body -->
+        <tbody>
+        <tr th:each = "oferta : ${listOferta}">
+            <td th:text = "${oferta.id_pojazdu}">Id_pojazdu</td>
+            <td th:text = "${oferta.numer_vin}">Numer vin</td>
+            <td th:text = "${oferta.marka}">Marka</td>
+            <td th:text = "${oferta.model}">Model</td>
+            <td th:text = "${oferta.rok_produkcji}">Rok produkcji</td>
+            <td th:text = "${oferta.numer_rejestracyjny}">Numer rejestracyjny</td>
+            <td th:text = "${oferta.przebieg}">Przebieg</td>
+            <td th:text = "${oferta.rodzaj_paliwa}">Rodzaj paliwa</td>
+            <td th:text = "${oferta.kolor}">Kolor</td>
+            <td th:text = "${oferta.moc_silnika}">Moc silnika</td>
+            <td th:text = "${oferta.pojemnosc_bagaznika}">Pojemność bagażnika</td>
+            <td th:text = "${oferta.cena}">Cena</td>
+            <td th:text = "${oferta.id_salonu}">Id salonu</td>
+            <td>
+                <a th:href="@{'/edit/'+${oferta.id_pojazdu}}" >Edytuj</a>
+                &nbsp; &nbsp; &nbsp;&nbsp;
+                <a th:href="@{'/delete/'+${oferta.id_pojazdu}}" onclick="return confirm('Jesteś pewien że chcesz usunąć ten pojazd?');">Usuń</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --bg1: #151828;
+    --bg2: #1B1F34;
+    --body: #FFFFFF;
+    --brand: #FFAB76;
+    --white: #fff;
+}
+body{
+    font-family:"Inter","Segoe UI",Tahoma,Geneva,Verdana,sans-serif;
+    color: var(--body);
+    line-height: 1.8;
+    background-color: var(--bg1);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family:"Dela Gothic One",'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;;
+}
+
+img{
+    width: 100%;
+}
+
+section{
+    padding-top: 160px;
+    padding-bottom: 100px;
+}
+/* NAVBAR */
+    .navbar{
+    background:linear-gradient(to bottom,#1B1F34,rgba(27,31,52,0.2));
+}
+
+    .navbar-brand{
+        font-family:"Dela Gothic One",'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+        font-size: 32px;
+    }
+
+
+
+/*HERO*/
+#hero{
+    background: url("../img/fiat.jpg");
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+/*BTN*/
+.btn{
+    padding: 16px 36px;
+    font-family:"Dela Gothic One",'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+    transition: all 0.4s ease;
+    border-radius: 0;
+}
+
+.btn-brand{
+    background-color: var(--white);
+}
+
+.btn-brand:hover{
+    background-color: transparent;
+    color: var(--white);
+    border-color: var(--white);
+}
+
+/*Kontakt*/
+
+#Kontakt{
+
+}
+
+.container9{
+    text-align:center;
+
+}
+h12{
+    text-size:36px;
+}
+
+#about h1{
+    font-size: 32px;
+}
+#about .signature{
+
+}
+
+.form-group{
+    font-size: 20px;
+}
+
+h3{
+    font-size: 16px;
+
+}
+
+.signature{
+    padding-top:40px;
+    padding-bottom: 46px;
+    float:left;
+}
+.signature1{
+    top:10px;
+
+    float:center;
+}
+/*h10{
+    text-align: center;
+    padding: 16px 36px;
+    font-size:20px;
+    font-family:"Dela Gothic One",'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+.form{
+    text-align: center;
+        padding: 16px 36px;
+        font-size:20px;
+}
+*/
+
+
+h9{
+    font-size:24px;
+}
+
+/*.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+*/
+
+.heading{
+    text-align:center;
+    margin:0;
+
+}
+.heading span{
+    font-weight:500;
+    font-size:30px;
+    color:var(--white)
+    font-family:"Dela Gothic One",'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+
+}
+
+.heading p{
+    font-size:0.938rem;
+    font-weight:300;
+}
+
+
+.cars-container{
+        display:flex;
+        flex-wrap:wrap;
+        gap:2rem;
+        margin-top:1rem;
+}
+.cars-container .box{
+        flex: 1 1 17rem;
+        position:relative;
+        height:200px;
+        border-radius:0.5rem;
+        overflow:hidden;
+}
+
+
+/*.heroes{
+    height:100%;
+    width:100%;
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("../img/fiattlo.jpg");
+    background-position:center;
+    background-size:cover;
+}
+*/
+
+
+.form-box{
+    width:500px;
+    height: 600px;
+    position:relative;
+    margin: 6% auto;
+    background: #fff;
+    padding:5px;
+}
+
+.button-box{
+    width:200px;
+    margin:35px auto;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius:30px;
+
+
+}
+
+.toggle-btn{
+    padding:10px 20px;
+    cursor:pointer;
+    background:transparent;
+    border:0;
+    outline:none;
+    position:relative;
+}
+
+#btn{
+    top:0;
+    center:0;
+    position:absolute;
+    width:100px;
+    height:100%;
+    background:linear-gradient(to right,#ff105f,#ffad06);
+    border-radius:30px;
+    transition:.5s;
+
+}
+#hermiona{
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("../img/fiattlo.jpg");
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+}
+/*
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins',sans-serif;
+}
+*/
+
+.form .tak  {
+  border: 5px solid #f1f1f1;
+  background-color: #264b65;
+
+}
+
+.container_login{
+  max-width: 480px;
+  padding: 0 20px;
+  margin: 170px auto;
+}
+
+.title{
+  height: 30px;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+/*zapomniane haslo*/
+
+.pass{
+  margin: -8px 0 20px 0;
+}
+.pass a{
+  color: #ffffff;
+  font-size: 17px;
+  text-decoration: none;
+}
+.pass a:hover{
+  text-decoration: underline;
+}
+
+
+
+/*rejestracja*/
+
+.signup-link{
+  text-align: left;
+  margin-top: 20px;
+  font-size: 17px;
+}
+.signup-link a{
+  color: #ffffff;
+  text-decoration: none;
+}
+.signup-link a:hover{
+  text-decoration: underline;
+}
+
+.btn-primary{
+    background-color: #88ccfc;
+    align:center;
+
+}
+
+
+.btn-pri{
+    gap:1rem;
+    margin-top:1rem;
+    position:relative;
+    background-color: #008CBA;
+    border-radius: 6px;
+    float: center;
+    border: 1px white;
+}
+
+
+
+/* CSS */
+#error-container {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#error-container h1 {
+  color: #ff0000;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#error-container p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#error-container img {
+  width: 300px;
+  margin-top: 20px;
+}
+
+.cars-text{
+    text-align:center;
+    font-weight:300;
+        font-size:16px;
+        color:var(--white)
+        font-family:"Dela Gothic One",'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+        gap:2rem;
+        margin:2rem;
+}
+
+div .buttonik{
+    text-align:center;
+}
+
+div .buttonik1{
+    text-align:center;
+}
+
+div .title4{
+    text-align:center;
+    gap:2rem;
+    font-size:36px;
+}
+div .form-submit4{
+    text-align:center;
+    gap:2rem;
+    margin:2rem;
+
+}
+
+div .form-group4{
+    text-align:center;
+    gap:2rem;
+        margin:2rem;
+}
+
+#idek{
+    text-align:center;
+    position:center;
+
+
+}
+
+#haslo_znajdz{
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("../img/fiattlo.jpg");
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+h12{
+    font-size:36px;
+    font-family:"Dela Gothic One",'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+
+h15{
+    font-size:20px;
+}
+
+div .buttonik3{
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
