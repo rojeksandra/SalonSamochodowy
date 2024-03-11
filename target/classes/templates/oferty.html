@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Oferta</title>
+    <meta name="theme-color" content="green;">
+    <link rel="icon" href="../img/caar.jpg"
+          type="image/x-icon"/>
+    <style>
+.container {
+text-align: left;
+}
+h1 {
+color: darkred;
+}
+</style>
+    <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/4.0.0-2/css/bootstrap.min.css} "/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="remixicons/fonts/remixicon.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!--<script>-->
+<!--    setTimeout(function(){-->
+<!--        window.location.href = 'https://www.tutorialspoint.com/javascript/';-->
+<!--    }, 5000);-->
+<!--</script>-->
+
+<!--<script type="text/javascript">-->
+<!--    function Redirect()-->
+<!--    {-->
+<!--        window.location="http://www.wp.pl";-->
+<!--    }-->
+<!--    document.write("[[${#httpServletRequest.remoteUser}]] You will be redirected to a new page in 5 seconds");-->
+<!--    setTimeout('Redirect()', 5000);-->
+<!--</script>-->
+
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+        <a class="navbar-brand" href="/">Salon samochodowy Autex</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/index}">Strona główna</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Oferta
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/kontakt}">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/login}">Zaloguj się</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="cars" id="cars">
+    <div class="heading">
+        <span>Nasza oferta aut</span>
+        <p>W naszym salonie oferujemy bogatą gamę pojazdów do zakupu jak i pod leasing.</p>
+        <p>Poniżej zobacz dostępne modele:</p>
+    </div>
+    <div class="cars-container container">
+        <div class="box">
+            <img src="img/tipo.jpg" alt="" >
+            <div style="position:absolute;bottom:0;font-family:Dela Gothic One;color: var(--white);border-color: var(--white);">TIPO</div>
+            <h11>Tipo</h11>
+        </div>
+        <div class="box">
+            <img src="img/5001.jpg" alt=""   >
+            <div style="position:absolute;bottom:0;font-family:Dela Gothic One;color: var(--white);border-color: var(--white);">500</div>
+            <h11>500</h11>
+        </div>
+        <div class="box">
+            <img src="img/500X.jpg" alt=""  >
+            <div style="position:absolute;bottom:0;font-family:Dela Gothic One;color: var(--white);border-color: var(--white);">500X</div>
+            <h11>500X</h11>
+        </div>
+        <div class="box">
+            <img src="img/panda.jpg" alt=""  >
+            <div style="position:absolute;bottom:0;font-family:Dela Gothic One;color: var(--white);border-color: var(--white);">PANDA</div>
+            <h11>Panda</h11>
+        </div>
+        <div class="box">
+            <img src="img/500L.jpg" alt="" >
+            <div style="position:absolute;bottom:0;font-family:Dela Gothic One;color: var(--white);border-color: var(--white);">500L</div>
+            <h11>500L</h11>
+        </div>
+        <div class="box">
+            <img src="img/ducato.jpg" alt="" >
+            <div style="position:absolute;bottom:0;font-family:Dela Gothic One;color: var(--white);border-color: var(--white);">DUCATO</div>
+            <h11>Ducato</h11>
+        </div>
+
+    </div>
+    <div class="cars-text">
+        <p>Aby zobaczyć konkretne modele dostępne do zakupu zapraszamy do zalogowania.</p>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+<script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+<script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+<script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+<script th:src="@{/js/script.js}"></script>
+
+</body>
+</html>
