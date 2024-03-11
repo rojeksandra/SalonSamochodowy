@@ -42,17 +42,41 @@ Baza danych została zaprojektowana przy użyciu programu Toad Data Modeler. Sk�
 
   ![link](images_readme/zapytanie5.jpg)
 
-  
-
-  
-
-
-
-
-
 ## Opis
 Projekt składa się z dwóch perspektyw: administratora z rozszerzonymi uprawnieniami do zarządzania, takimi jak modyfikacja, dodawanie i usuwanie pojazdów, oraz użytkownika, który po rejestracji lub zalogowaniu może przeglądać oferty oraz umawiać się na wizytę w salonie lub rezerwować dostępne auto. Bez konieczności logowania możliwe jest jedynie przeglądanie ofert salonu, strony głównej oraz zakładki kontakt.
 
 ## Prezentacja Wyglądu Strony
+
+- Strona główna
+  
+  ![link](images_readme/main.jpg)
+
+- Oferta
+  
+  ![link](images_readme/oferta.jpg)
+  
+- Logowanie
+  
+  ![link](images_readme/log.jpg)
+
+- Perspektywa użytkownika
+
+  ![link](images_readme/user.jpg)
+
+- Kalendarz - umówienie spotkania 
+
+  ![link](images_readme/kalendarz.jpg)
+
+- Perspektywa Administratora 
+
+  ![link](images_readme/modyfikacja.jpg)
+
+- Kontakt
+
+  ![link](images_readme/contact.jpg)
+
+- Obsługa błędów 
+
+  ![link](images_readme/error.jpg)
 
 
