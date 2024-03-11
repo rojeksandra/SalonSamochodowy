@@ -22,6 +22,7 @@ Baza danych została zaprojektowana przy użyciu programu Toad Data Modeler. Sk�
 
 ## Przykładowe zapytania SQL 
 - pracownicy którzy dostają pensję podstawową większą od 6000
+  ![link](images_readme/zapytanie1.jpg)
   
 - 
 ## Opis
