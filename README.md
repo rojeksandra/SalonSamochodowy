@@ -34,6 +34,16 @@ Baza danych została zaprojektowana przy użyciu programu Toad Data Modeler. Sk�
 
   ![link](images_readme/zapytanie3.jpg)
 
+- wyszukiwanie pracowników pracujących jako sprzedawcy którzy znają dowolny język na poziomie C2
+
+  ![link](images_readme/zapytanie4.jpg)
+
+- wyszukiwanie klientów zamieszkałych w mieście Warszawa
+
+  ![link](images_readme/zapytanie5.jpg)
+
+  
+
   
 
 
