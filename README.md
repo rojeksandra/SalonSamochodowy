@@ -24,7 +24,9 @@ Baza danych została zaprojektowana przy użyciu programu Toad Data Modeler. Sk�
 - pracownicy którzy dostają pensję podstawową większą od 6000
   ![link](images_readme/zapytanie1.jpg)
   
-- 
+- ilość pracowników biurowych
+- ![link](images_readme/zapytanie2.jpg)
+  
 ## Opis
 Projekt składa się z dwóch perspektyw: administratora z rozszerzonymi uprawnieniami do zarządzania, takimi jak modyfikacja, dodawanie i usuwanie pojazdów, oraz użytkownika, który po rejestracji lub zalogowaniu może przeglądać oferty oraz umawiać się na wizytę w salonie lub rezerwować dostępne auto. Bez konieczności logowania możliwe jest jedynie przeglądanie ofert salonu, strony głównej oraz zakładki kontakt.
 
